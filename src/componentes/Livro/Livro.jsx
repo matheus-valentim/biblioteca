@@ -67,7 +67,7 @@ export default function Livro() {
 							className="footer-link"
 							href={livroAtual.saleInfo.buyLink}
 						>
-							Ler Agora
+							Comprar
 						</a>
 					</div>
 				</div>
