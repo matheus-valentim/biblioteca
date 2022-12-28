@@ -1,0 +1,136 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: #c8c8c8;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 9999;
+  overflow-y: scroll;
+}
+
+.modalContainer {
+  width: 70%;
+  height: 500px;
+  border-radius: 12px;
+  background-color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px;
+}
+
+.livroModal-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.livroModal-visual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.livroModal-visual p {
+  text-align: center;
+}
+
+.livroModal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.livroModal-h1 {
+  text-align: center;
+}
+
+.titleCloseBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalContainer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-botao {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+.livroModal-descricao {
+  font-size: 1rem;
+  word-spacing: 4px;
+  max-width: 450px;
+}
+
+.livroModal-tumb {
+  height: 300px;
+  width: 200px;
+  -webkit-box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.777);
+          box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.777);
+}
+/*# sourceMappingURL=LivroModal.css.map */

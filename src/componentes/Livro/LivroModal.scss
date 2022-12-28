@@ -1,0 +1,92 @@
+.modalBackground {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(200, 200, 200);
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+	overflow-y: scroll;
+}
+
+.modalContainer {
+	width: 70%;
+	height: 500px;
+	border-radius: 12px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+	overflow-y: scroll;
+}
+.livroModal-top {
+	display: flex;
+	gap: 10px;
+}
+.livroModal-visual {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.livroModal-visual p {
+	text-align: center;
+}
+.livroModal-container {
+	display: flex;
+	justify-content: space-around;
+}
+.livroModal-h1 {
+	text-align: center;
+}
+.titleCloseBtn {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+	background-color: transparent;
+	border: none;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.modalContainer .footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-botao {
+	width: 150px;
+	height: 45px;
+	margin: 10px;
+	border: none;
+	background-color: cornflowerblue;
+	color: white;
+	border-radius: 8px;
+	font-size: 20px;
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+	background-color: cornflowerblue;
+	color: white;
+	padding: 10px 40px;
+	border-radius: 8px;
+	font-size: 20px;
+}
+#cancelBtn {
+	background-color: crimson;
+}
+.livroModal-descricao {
+	font-size: 1rem;
+	word-spacing: 4px;
+	max-width: 450px;
+}
+.livroModal-tumb {
+	height: 300px;
+	width: 200px;
+	box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.777);
+}

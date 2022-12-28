@@ -1,36 +1,33 @@
-import logo from "./logo.svg";
-import "./App.css";
-
+import Home from "./componentes/Home";
+import { useState } from "react";
+import { Context } from "./contexts/context";
 function App() {
-	async function getUser() {
-		try {
-			const axios = require("axios");
-			const response = await axios.get(
-				"https://www.googleapis.com/books/v1/volumes?q=inauthor:jk-rowling&maxResults=20"
-			);
-			console.log(response);
-		} catch (error) {
-			console.error(error);
-		}
-	}
-	getUser();
+	const [livros, setLivros] = useState("");
+	const [livro, setLivro] = useState("");
+	const [livroAtual, setLivroAtual] = useState("");
+	const [openModalLivro, setOpenModalLivro] = useState(false);
+	const [currentPage, setCurrentPage] = useState(0);
+	const [loading, setLoading] = useState(false);
+
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-			</header>
-		</div>
+		<Context.Provider
+			value={{
+				livros,
+				setLivros,
+				livroAtual,
+				setLivroAtual,
+				openModalLivro,
+				setOpenModalLivro,
+				currentPage,
+				setCurrentPage,
+				livro,
+				setLivro,
+				loading,
+				setLoading,
+			}}
+		>
+			<Home />
+		</Context.Provider>
 	);
 }
 
