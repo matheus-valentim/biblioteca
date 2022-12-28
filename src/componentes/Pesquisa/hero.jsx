@@ -47,7 +47,7 @@ export default function Hero() {
 					type="text"
 					placeholder="Procure um livro..."
 					onChange={(e) => {
-						setLivro(e.target.value);
+						setLivro(e.target.value.trim());
 					}}
 				/>
 				<button className="button-hero">Procurar</button>
