@@ -17,7 +17,7 @@
 }
 
 .modalContainer {
-  width: 70%;
+  width: 60%;
   height: 500px;
   border-radius: 12px;
   background-color: white;
@@ -31,6 +31,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 25px;
+  overflow-y: scroll;
 }
 
 .livroModal-top {
@@ -108,13 +109,14 @@
   cursor: pointer;
 }
 
-a {
+.footer-link {
   text-decoration: none;
   background-color: cornflowerblue;
   color: white;
   padding: 10px 40px;
   border-radius: 8px;
   font-size: 20px;
+  display: inline-block;
 }
 
 #cancelBtn {
@@ -132,5 +134,56 @@ a {
   width: 200px;
   -webkit-box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.777);
           box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.777);
+}
+
+@media screen and (max-width: 760px) {
+  .livroModal-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .livroModal-tumb {
+    height: 200px;
+    width: 150px;
+  }
+  .livroModal-visual {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .livroModal-h1 {
+    font-size: 1.2rem;
+  }
+  .livroModal-descricao {
+    font-size: 0.9rem;
+  }
+  .modalContainer {
+    width: 70%;
+    padding: 30px;
+  }
+  .footer-botao {
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  .footer-link {
+    text-decoration: none;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 17px;
+    display: inline-block;
+  }
 }
 /*# sourceMappingURL=LivroModal.css.map */

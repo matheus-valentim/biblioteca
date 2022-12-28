@@ -37,7 +37,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: antiquewhite;
 }
 
 .main-conteudo-p {
@@ -72,9 +71,29 @@
   height: 190px;
   -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.419);
           box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.419);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.main-button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 1px solid black;
+  outline: none;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 5px;
+  width: 90%;
+  cursor: pointer;
 }
 
 #sentinela {
   height: 100px;
+}
+
+.main-button:hover {
+  color: white;
+  background-color: black;
 }
 /*# sourceMappingURL=App.css.map */

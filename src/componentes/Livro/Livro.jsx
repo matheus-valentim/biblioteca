@@ -1,7 +1,7 @@
 import { Context } from "../../contexts/context";
 import { useContext } from "react";
-import axios from "axios";
-import "./LivroModal.scss";
+
+import "./LivroModal.css";
 
 export default function Livro() {
 	const { livroAtual, setOpenModalLivro } = useContext(Context);
@@ -17,9 +17,10 @@ export default function Livro() {
 						X
 					</button>
 				</div>
+				<h1 className="livroModal-h1">{livroAtual.volumeInfo.title}</h1>
 				<div className="livroModal-container">
+					<div className="livroModal-container"></div>
 					<div>
-						<h1 className="livroModal-h1">{livroAtual.volumeInfo.title}</h1>
 						<div className="livroModal-top">
 							<p>{livroAtual.volumeInfo.authors + " "}</p>
 							<p>{livroAtual.volumeInfo.publishedDate}</p>
@@ -61,7 +62,11 @@ export default function Livro() {
 						Voltar
 					</button>
 					<div>
-						<a target="_blank" href={livroAtual.saleInfo.buyLink}>
+						<a
+							target="_blank"
+							className="footer-link"
+							href={livroAtual.saleInfo.buyLink}
+						>
 							Ler Agora
 						</a>
 					</div>
