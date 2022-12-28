@@ -10,9 +10,10 @@ export default function Hero() {
 		setLoading(true);
 		try {
 			const response = await axios.get(
-				`https://www.googleapis.com/books/v1/volumes?q=${livro}&maxResults=20&startIndex=${currentPage}&orderBy=relevance`
+				`https://www.googleapis.com/books/v1/volumes?q=${livro}&maxResults=20&startIndex=${currentPage}`
 			);
 			setLivros((antigo) => [...response.data.items]);
+			console.log(response);
 		} catch (error) {
 			console.error(error);
 		}
@@ -22,7 +23,7 @@ export default function Hero() {
 		setLoading(true);
 		try {
 			const response = await axios.get(
-				`https://www.googleapis.com/books/v1/volumes?q=${livro}&maxResults=20&startIndex=${currentPage}&orderBy=relevance`
+				`https://www.googleapis.com/books/v1/volumes?q=${livro}&maxResults=20&startIndex=${currentPage}`
 			);
 			setLivros((antigo) => [...antigo, ...response.data.items]);
 		} catch (error) {

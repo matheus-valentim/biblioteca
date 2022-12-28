@@ -62,13 +62,17 @@ export default function Livro() {
 						Voltar
 					</button>
 					<div>
-						<a
-							target="_blank"
-							className="footer-link"
-							href={livroAtual.saleInfo.buyLink}
-						>
-							Comprar
-						</a>
+						{livroAtual.saleInfo.buyLink ? (
+							<a
+								target="_blank"
+								className="footer-link"
+								href={livroAtual.saleInfo.buyLink}
+							>
+								Comprar
+							</a>
+						) : (
+							livroAtual.saleInfo.saleability
+						)}
 					</div>
 				</div>
 			</div>
