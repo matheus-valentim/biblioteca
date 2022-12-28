@@ -29,4 +29,4 @@ Para usar Biblioteca, siga estas etapas:
 
 ## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](https:https://github.com/matheus-valentim/biblioteca/blob/main/license) para mais detalhes.
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](https://github.com/matheus-valentim/biblioteca/blob/main/license) para mais detalhes.
