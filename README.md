@@ -1,24 +1,9 @@
 # Biblioteca ![badge](https://img.shields.io/badge/license-MIT-sucess)
 
-> é um projeto de pesquisa da api do googgle books.
+> é um projeto de pesquisa da api do googgle books, se houver falta de dados, eles não foram providos pelo google
 
-## 💻 Dependências
-
-
-`axios: ^0.27.2`
-<br>
-`gapi-script: ^1.2.0`
-<br>
-`react:^18.2.0`
-<br>
-`react-dom: ^18.2.0`
-<br>
-`react-router-dom: ^6.4.0`
-<br>
-`react-scripts: 5.0.1`
-<br>
-`sass: ^1.54.9`
-<br>
+## ☕ Link para teste
+Teste o site: https://biblioteca-blue.vercel.app/
 
 ## ☕ Usando Biblioteca
 
